@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body{
+            /* background-image: url(https://img.freepik.com/free-photo/flat-lay-chat-bubbles-with-telephone-receiver-copy-space_23-2148796079.jpg); */
+            background-size: cover;
+            background-position: center;
+        }
+        nav{
+            display: grid;
+            width: 100vw;
+            padding: 10px 0;
+            /* justify-content: center; */
+        }
+        .navlink{
+            font-size:1.2rem;
+            text-decoration: none;
+            padding: 0 1rem;
+            gap: 40px;
+            text-align: right;
+            margin-top: 50px;
+            color: rgb(6, 120, 120);
+            transition: font-size 0.2s ease-in-out;
+        }
+        .navlink:hover{
+            font-size: 1.4rem;
+            text-decoration: underline;
+        }
+        .navlink:visited{
+            text-decoration: underline;
+            
+        }
+        .head {
+        /* display: flex; */
+        align-items: center;
+        gap: 20px; /* Space between links */
+}
+        .container{
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            margin: 100px auto;
+            /* border: 5px solid white; */
+            border-radius: 10px;
+            width: 400px;
+            height: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+        h2{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .name, .email, .message{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: transparent;
+            width: 95%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid rgb(96, 193, 191);
+            margin-bottom: 20px;
+            transition: 0.5s all ease-in-out;
+        }
+        .email{
+            height: 20px;
+        }
+        .message{
+            height: 100px;
+            resize: none;
+        }.name:hover{
+            /* background-color: #f2f2f2; */
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+
+        }
+        .email:hover{
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+        .message:hover{
+            transition: 0.6s all ease-in-out;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+        }
+        .name::placeholder,.email::placeholder{
+            color: black;
+            transition: 0.45s all ease-in-out;
+        }
+        .name:hover::placeholder{
+            transform : translateY(-30px);
+        }
+        .email:hover::placeholder{
+            transform: translateY(-30px);
+        }
+        .message::placeholder{
+            color: black;
+            transition: 0.45s all ease-in-out;
+        }
+        .message:hover::placeholder{
+            transform: translateY(-30px);
+        }
+        h3{
+            margin-bottom: 10px;
+        }
+        .button{
+            margin: -10px auto;
+            display: block;
+            height: 40px;
+            width: 100px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s all ease-in-out;
+        }
+        .button:hover{
+            background-color: #3e8e41;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="head">
+            <h2>
+                Your Voice Matters
+            </h2>
+            </div>
+            <div>
+                <a href="https://www.google.com/" class="navlink">Home</a>
+            </div>
+            <div>
+                <a href="#about" class="navlink">About</a>
+            </div>
+            <div>
+                <a href="#services" class="navlink">Services</a>
+            </div>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h2>Contact Us</h2>
+            <div class="fields">
+                <h3>Name:</h3>
+                <input class="name" type="text" placeholder="Enter your name">
+                <h3>Email Address:</h3>
+                <input class="email" type="email" placeholder="Enter your email">
+                <h3>Message:</h3>
+                <textarea class="message" placeholder="Enter your Message"></textarea>
+                <button class="button">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
